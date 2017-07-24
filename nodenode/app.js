@@ -1,18 +1,32 @@
 console.log("Starting app.js...");
+//node API
 const reqFs = require('fs');
 const os = require('os');
+//NPM modules
+const _ = require("lodash"); 
+//javascript files
 const notes = require("./notes.js");
 
-// var user = os.userInfo(); 
-// reqFs.appendFile('greetings.txt','Hello ' + user.username, function (err){
-//     if (err) {
-//         console.log("Sorry, I can't write to this text file (run this program as administrator?)")
+// var stringVar = "Strings!";
+// var notStringVar = 90;
+// var isStringVar = (_.isString(stringVar)); 
+// var isNotStringVar = (_.isString(notStringVar)); 
+
+// if (isStringVar === true && isNotStringVar === false) {
+//     console.log("Both objects are strings!"); 
+// }
+// else if (isStringVar === true || isNotStringVar === false) {
+//     //checks what one is true / false
+//     var objectString
+//     if (isStringVar === true){
+//         objectString = "stringVar";
 //     }
-// });
+//     else {
+//         objectString = "notStringVar";
+//     }
 
-// var result = notes.addNote(); 
-// console.log(result);
-
-notes.add(17,22); 
-
-// console.log("App Finished...");
+//     console.log("Only one object is a string: " + objectString); 
+// }
+// else {
+//     console.log("Neither condition is true!");
+// }
